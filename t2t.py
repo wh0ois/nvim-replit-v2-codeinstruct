@@ -40,11 +40,11 @@ def generate(
     )
 
 config = AutoConfig.from_pretrained(
-    os.path.abspath("/home/vinayak/Documents/smolkit/models"),
+    os.path.abspath("/home/models"),
     context_length=2048,
 )
 llm = AutoModelForCausalLM.from_pretrained(
-    os.path.abspath("/home/vinayak/Documents/smolkit/models/replit-v2-codeinstruct-3b.q4_1.bin"),
+    os.path.abspath("/home/models/replit-v2-codeinstruct-3b.q4_1.bin"),
     model_type="replit",
     config=config,
 )
