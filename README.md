@@ -9,3 +9,4 @@ The user can invoke the plugin by typing the `:T2T` followed by the instruction.
 
 `:T2T Write a program in C to add two numbers` 
 
+Run inference using your CPU. This inference code uses a ggml quantized model. To run the model we'll use a library called ctransformers that has bindings to ggml in python.
